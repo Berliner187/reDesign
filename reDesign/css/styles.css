@@ -1,0 +1,275 @@
+body {
+	background-color: #E0E5EC;
+}
+html {
+	scroll-behavior: smooth;
+}
+@font-face {
+	font-family: 'Pobeda';
+	src: url(../fonts/Pobeda.ttf);
+}
+@font-face {
+	font-family: 'Paranema';
+	src: url(../fonts/LIBRARY3AM.otf)
+}
+@font-face {
+	font-family: '187';
+	src: url(../fonts/187.otf);
+}
+@font-face {
+	font-family: 'SFNS Display';
+	src: url(../fonts/SFNS.ttf);
+}
+
+h3, p, li {
+	font-family: 'SFNS Display'
+}
+h1 {
+	text-align: center;
+}
+.h1-header {
+	font-family: 'Paranema';
+	text-align: center;
+	font-size: 8em;
+	margin-top: 0;
+}
+
+h2 {
+	margin-left: 2em;
+	font-size: 3em
+}
+.h2-soft-ui {
+	font-family: 'Paranema'
+}
+.h2-redesign {
+	font-family: 'Pobeda'
+}
+
+h3 {
+	text-align: center;
+	font-size: 1.8em
+}
+p {
+	text-indent: 2em;
+	margin-left: 3em;
+	margin-right: 3em
+}
+li {
+	list-style: none;
+}
+
+hr {																				/*Горизонтальная черта*/
+	width: 90%;
+	height: .15em;
+	color: #000;
+	background-color: #000;
+	border-radius: .2em
+}
+
+.hotbox {																		/*Основной контейнер с контентом*/
+	background-color: #E0E5EC;
+	width: 90vw;
+	margin: 0 auto;
+	border-radius: 1.3em;
+	margin-bottom: 1em;
+}
+.shadow {																		
+    background: #fff; 													/*Параметры тени для основного контейнера*/
+    box-shadow: 0 0 .6em rgba(9, 9, 9, 0.3);
+    padding: 12px;
+}
+
+.logo {																			/*Лого в меню, положение и ссылка*/
+	position: absolute;
+	margin-left: 0;
+	margin-top: -1em;
+	text-align: left;
+	text-decoration: none;
+}
+.logo-redesign {															/*Текст лого-ссылки*/
+	font-family: 'SFNS Display';
+	font-size: 4.4em;
+	display: inline;
+}
+.a-logo {
+	text-decoration: none;
+	color: #000
+}
+
+
+		/*Все ссылки*/
+.a-resourse {																/*Параметры ссылки на ресурс под статьей*/
+	color: #000;
+	transition-duration: .3s
+}		
+.a-resourse:hover {
+	color: #FF767D
+}	
+.a-redesign {
+	color: #000;
+	transition-duration: .3s
+}
+
+.redesign-text {
+	margin-left: 3em;
+}
+
+.button {																	/*Кнопи в меню*/
+	text-decoration: none;
+	margin: 0 auto;
+	font-family: 'Arial';
+	font-size: 1.71em;
+	margin-left: .2em;
+    border-radius: 1.3em;
+    color: white;
+    padding: .8em 2.4em;
+    display: inline-block;
+    transition-duration: .4s;
+    box-shadow: 0 0 0 .05em rgba(9, 9, 9, .1)
+}
+.button:hover {
+	transition-duration: .4s;
+	box-shadow: 0 0 .6em rgba(9, 9, 9, 0.6)
+}
+.button-dropdown {
+	display: none;
+	text-decoration: none;
+	margin: 0 auto;
+	font-family: 'Arial';
+	font-size: 1.71em;
+	margin-left: .2em;
+    border-radius: 1.3em;
+    color: white;
+    padding: .0001em 1.6em;
+    display: inline-block;
+    transition-duration: .4s;
+    box-shadow: 0 0 0 .05em rgba(9, 9, 9, .1)
+}
+.button-dropdown:hover {
+	display: block;
+
+}
+
+
+
+ul {
+    display: block;
+    list-style-type: none; 
+    padding: 0;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+ /* Creates a horizontal list with spacing */
+
+li {
+  display: inline-block;
+  float: left;
+  width: 16.2vw;
+}
+
+/*Style for menu links */
+
+li a {
+  display: block;
+  transition-duration: .32s;
+  text-align: center;
+  line-height: 50px;
+  font-family: 'SFNS Display';
+  color: #fff;
+  background: #2f3036;
+  text-decoration: none; 
+}
+
+/* Hover State for top level links*/
+
+li:hover a {
+  background: #843FED;
+}
+
+/* Style for dropdown links*/
+
+li:hover ul a {
+  background: #333;
+  color: #fff;
+  line-height: 40px;
+}
+
+/* Hover state for dropdown links */ 
+li:hover ul a:hover {
+  background: #843FED;
+  color: #fff;
+}
+
+/*Hide dropdown links until they are need */
+li ul {
+  display: none;
+}
+
+/*Make dropdown links vertical */
+
+li ul li {
+  display: block; 
+  float: none; 
+  text-align: center;
+}
+
+/*Prevent text wrapping */
+li ul li a {
+  width: auto; 
+  min-width: 100px; 
+  padding: 0 20px; 
+  text-align: center;
+}
+
+/*Display the dropdown on hover */
+ul li a:hover + .hidden, .hidden:hover {
+  display: block; 
+  text-align: center;
+}
+
+
+
+
+
+.img-content {													/*Параметры изображений на площадке*/
+	display: inline-block;
+	border-radius: 1.3em;
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar { /* 1 - скроллбар */
+    width: 15px;
+    height: 30px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-button { /* 2 - кнопка */
+	color: #000;
+  }
+
+  ::-webkit-scrollbar-track { /* 3 - трек */
+  	color: #55D8D3
+  }
+
+  ::-webkit-scrollbar-track-piece { /* 4 - видимая часть трека */
+  }
+
+  ::-webkit-scrollbar-thumb { /* 5 - ползунок */
+    border-radius: 2em;
+    background-color: #99D8D0;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+  	background-color: #99D8C1;
+
+  ::-webkit-scrollbar-corner { /* 6 - уголок */
+  }
+
+  ::-webkit-resizer { /* 7 - изменение размеров */
+  }
