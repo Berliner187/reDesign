@@ -22,7 +22,7 @@ html {
 }
 
 h3, p, li {
-	font-family: 'SFNS Display'
+	font-family: 'Arial'
 }
 h1 {
 	text-align: center;
@@ -44,6 +44,15 @@ h2 {
 .h2-redesign {
 	font-family: 'Pobeda'
 }
+.h2-redesign {
+	font-family: 'Pobeda';
+	font-size: 4em
+}
+.h2-main-page {
+	font-family: 'Paranema';
+	font-size: 3em;
+	margin-left: 0
+}
 
 h3 {
 	text-align: center;
@@ -53,6 +62,10 @@ p {
 	text-indent: 2em;
 	margin-left: 3em;
 	margin-right: 3em
+}
+.p-ctr {
+	text-align: center;
+	font-size: 1.3em
 }
 li {
 	list-style: none;
@@ -66,7 +79,7 @@ hr {																				/*Горизонтальная черта*/
 	border-radius: .2em
 }
 
-.hotbox {																		/*Основной контейнер с контентом*/
+.hotbox {															/*Основной контейнер с контентом*/
 	background-color: #E0E5EC;
 	width: 90vw;
 	margin: 0 auto;
@@ -74,19 +87,19 @@ hr {																				/*Горизонтальная черта*/
 	margin-bottom: 1em;
 }
 .shadow {																		
-    background: #fff; 													/*Параметры тени для основного контейнера*/
+    background: #fff; 										 		/*Параметры тени для основного контейнера*/
     box-shadow: 0 0 .6em rgba(9, 9, 9, 0.3);
     padding: 12px;
 }
 
-.logo {																			/*Лого в меню, положение и ссылка*/
-	position: absolute;
+.logo {					
 	margin-left: 0;
 	margin-top: -1em;
-	text-align: left;
+	width: 100px;
 	text-decoration: none;
+	float: left;
 }
-.logo-redesign {															/*Текст лого-ссылки*/
+.logo-redesign {													/*Текст лого-ссылки*/
 	font-family: 'SFNS Display';
 	font-size: 4.4em;
 	display: inline;
@@ -109,6 +122,14 @@ hr {																				/*Горизонтальная черта*/
 	color: #000;
 	transition-duration: .3s
 }
+.a-redesign {
+	color: #000;
+	transition-duration: .3s
+}
+.a-redesign:hover {
+	color: #FF767D;
+	transition-duration: .3s
+}
 
 .redesign-text {
 	margin-left: 3em;
@@ -118,11 +139,11 @@ hr {																				/*Горизонтальная черта*/
 	text-decoration: none;
 	margin: 0 auto;
 	font-family: 'Arial';
-	font-size: 1.71em;
-	margin-left: .2em;
-    border-radius: 1.3em;
+	font-size: 1.5em;
+	margin-left: .5em;
+    border-radius: .8em;
     color: white;
-    padding: .8em 2.4em;
+    padding: .5em 2em;
     display: inline-block;
     transition-duration: .4s;
     box-shadow: 0 0 0 .05em rgba(9, 9, 9, .1)
@@ -131,145 +152,18 @@ hr {																				/*Горизонтальная черта*/
 	transition-duration: .4s;
 	box-shadow: 0 0 .6em rgba(9, 9, 9, 0.6)
 }
-.button-dropdown {
-	display: none;
-	text-decoration: none;
-	margin: 0 auto;
-	font-family: 'Arial';
-	font-size: 1.71em;
-	margin-left: .2em;
-    border-radius: 1.3em;
-    color: white;
-    padding: .0001em 1.6em;
-    display: inline-block;
-    transition-duration: .4s;
-    box-shadow: 0 0 0 .05em rgba(9, 9, 9, .1)
-}
-.button-dropdown:hover {
-	display: block;
 
-}
-
-
-
-ul {
-    display: block;
-    list-style-type: none; 
-    padding: 0;
-    width: 50vw;
-    margin: 0 auto;
-}
-
- /* Creates a horizontal list with spacing */
-
-li {
-  display: inline-block;
-  float: left;
-  width: 16.2vw;
-}
-
-/*Style for menu links */
-
-li a {
-  display: block;
-  transition-duration: .32s;
-  text-align: center;
-  line-height: 50px;
-  font-family: 'SFNS Display';
-  color: #fff;
-  background: #2f3036;
-  text-decoration: none; 
-}
-
-/* Hover State for top level links*/
-
-li:hover a {
-  background: #843FED;
-}
-
-/* Style for dropdown links*/
-
-li:hover ul a {
-  background: #333;
-  color: #fff;
-  line-height: 40px;
-}
-
-/* Hover state for dropdown links */ 
-li:hover ul a:hover {
-  background: #843FED;
-  color: #fff;
-}
-
-/*Hide dropdown links until they are need */
-li ul {
-  display: none;
-}
-
-/*Make dropdown links vertical */
-
-li ul li {
-  display: block; 
-  float: none; 
-  text-align: center;
-}
-
-/*Prevent text wrapping */
-li ul li a {
-  width: auto; 
-  min-width: 100px; 
-  padding: 0 20px; 
-  text-align: center;
-}
-
-/*Display the dropdown on hover */
-ul li a:hover + .hidden, .hidden:hover {
-  display: block; 
-  text-align: center;
-}
-
-
-
-
-
-.img-content {													/*Параметры изображений на площадке*/
+.img-content {													/*Параметры изображений*/
 	display: inline-block;
 	border-radius: 1.3em;
 }
-
-
-
-
-
-
-
-
-::-webkit-scrollbar { /* 1 - скроллбар */
-    width: 15px;
-    height: 30px;
-    background-color: transparent;
-  }
-
-  ::-webkit-scrollbar-button { /* 2 - кнопка */
-	color: #000;
-  }
-
-  ::-webkit-scrollbar-track { /* 3 - трек */
-  	color: #55D8D3
-  }
-
-  ::-webkit-scrollbar-track-piece { /* 4 - видимая часть трека */
-  }
-
-  ::-webkit-scrollbar-thumb { /* 5 - ползунок */
-    border-radius: 2em;
-    background-color: #99D8D0;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-  	background-color: #99D8C1;
-
-  ::-webkit-scrollbar-corner { /* 6 - уголок */
-  }
-
-  ::-webkit-resizer { /* 7 - изменение размеров */
-  }
+.img-content-main-page {													/*Параметры изображений*/
+	display: inline-block;
+	border-radius: 1.3em;
+	width: 48%
+}
+.img-content-soft-ui {
+	width: 48%;
+	margin-left: 1em;
+	border-radius: 1.3em
+}
